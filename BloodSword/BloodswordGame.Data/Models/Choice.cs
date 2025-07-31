@@ -14,7 +14,8 @@ namespace BloodswordGame.Data.Models
         public Paragraph FromParagraph { get; set; }
 
         // Where goes
-        public int ToParagraphId { get; set; }
-        public Paragraph ToParagraph { get; set; }
+        public int ToParagraphNumber { get; set; } 
+
+        public string? Description { get; set; }
     }
 }

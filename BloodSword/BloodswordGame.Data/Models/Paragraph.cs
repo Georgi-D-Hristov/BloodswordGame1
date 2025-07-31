@@ -9,6 +9,6 @@ namespace BloodswordGame.Data.Models
         [Required]
         public string Text { get; set; }
 
-        public ICollection<Choice> Choices { get; set; }
+        public ICollection<Choice> Choices { get; set; } = new List<Choice>();
     }
 }

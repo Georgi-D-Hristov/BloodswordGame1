@@ -20,11 +20,7 @@ namespace BloodswordGame.Data
                 .HasForeignKey(c => c.FromParagraphId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Choice>()
-                .HasOne(c => c.ToParagraph)
-                .WithMany()
-                .HasForeignKey(c => c.ToParagraphId)
-                .OnDelete(DeleteBehavior.Restrict);
+            
         }
     }
 }
